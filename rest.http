@@ -1,0 +1,47 @@
+
+
+GET http://localhost:3000
+
+
+
+##### REGISTER
+POST http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+    "email":"tuemeoa13@gmail.com",
+    "password":"abc123"
+}
+
+##### REFRESH TOKEN
+POST http://localhost:3000/user/refresh-token
+Content-Type: application/json
+
+{
+   "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDA1YjJmMjYxZTBhZmQ4YmI2ODUwZmQiLCJpYXQiOjE2NzgxODg0MjQsImV4cCI6MTcwOTc0NjAyNH0.femERn5QzYbOuimXFXjiiA-7Pb1u0QY9b_qS7Yb942o"
+}
+
+
+##### login
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "email":"tuemeoa13@gmail.com",
+    "password":"abc123"
+}
+
+#####LOG OUT
+DELETE http://localhost:3000/user/logout
+Content-Type: application/json
+
+{
+   "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDA1YjJmMjYxZTBhZmQ4YmI2ODUwZmQiLCJpYXQiOjE2NzgxODg0MjQsImV4cCI6MTcwOTc0NjAyNH0.femERn5QzYbOuimXFXjiiA-7Pb1u0QY9b_qS7Yb942o"
+}
+
+
+
+
+##### GET LIST
+GET http://localhost:3000/user/getlists
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDA1YjJmMjYxZTBhZmQ4YmI2ODUwZmQiLCJpYXQiOjE2NzgxODgzNzEsImV4cCI6MTY3ODE4ODQzMX0.xsMDq2uLeUBR353xpIj_otDx8DbciU6pP-nO1dUb7D4
